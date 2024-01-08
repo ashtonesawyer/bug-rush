@@ -1,7 +1,11 @@
+import sys
+import os
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import bugrush
 
 def test_unifinished():
-	p = bugrush.Puzzle(file="./tests/dumb2x2.bugs")
+	p = bugrush.Puzzle(file="./boards/dumb2x2.bugs")
 	assert p._finished() == False
 
 def test_finished():
