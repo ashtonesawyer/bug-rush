@@ -60,7 +60,8 @@ For A*:
 	457981    0.273    0.000    9.236    0.000 /u/sawyeras/cs441/bug-rush/bugrush.py:55(__copy__)
 ```
 
-I think I have a good heuristic, though. It counts the number of spaces in front of
+#### Heuristic 
+I think I have a good heuristic despite the runtime issues. It counts the number of spaces in front of
 the goal car + the number of cars in front of the goal car, and for each of those 
 cars, +1 if above and below it is blocked
 
